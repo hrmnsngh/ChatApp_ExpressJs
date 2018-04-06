@@ -1,0 +1,11 @@
+.header-container {
+    margin: 10 px;
+    shape-margin: round($number: 1);
+    background: 1 px solid grey;
+    text-align: center;
+    position: relative;
+    
+    .well {
+        margin: 10px;
+    }
+}

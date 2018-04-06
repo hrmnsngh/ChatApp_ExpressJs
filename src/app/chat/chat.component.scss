@@ -1,0 +1,38 @@
+.chat-container{
+    .chat{
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        .chat-box{
+            padding: 5px;
+
+
+            .input-box{
+                padding: 3px;
+                border: 1px solid rgba(90, 163, 160, 0.582);
+                border-radius: 5px;
+                height: 40px;
+                width: 350px; 
+            }
+            
+            .btn{
+                height: 40px;
+                width: 60px;
+                border-radius: 5px;
+            }
+
+        }
+        .chat-history{
+            padding: 5px;
+            border: 1px solid rgba(173, 190, 19, 0.952);
+            border-radius: 13px;
+            background-color: white;
+            height: auto;
+
+        }
+
+ 
+    }
+
+}

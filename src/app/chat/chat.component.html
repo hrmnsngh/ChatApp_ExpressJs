@@ -1,0 +1,28 @@
+<div class="chat-container">
+
+  <div class="chat col-md-8">
+    <h2>{{username}}</h2>
+    <form class="chat-box">
+     <div *ngIf= "!userNameExist">
+          <input class="input-box" type="text" name="username" [(ngModel)]="username">
+          <button class="btn btn-success" (click)="sendUser()">Chat</button>
+      </div>
+      
+      <div *ngIf = "userNameExist">
+        <input class="input-box" type="text" name="message" id="message" [(ngModel)]="message">
+        <button class="btn btn-success" (click)="sendMessage()">Send</button>
+      </div>
+
+
+
+    </form>
+    <h3>Chat History</h3>
+    <div class="chat-history">
+
+      <div *ngFor="let message of messages">
+       :&nbsp;{{message}}
+      </div>
+    </div>
+  </div>
+
+</div>
